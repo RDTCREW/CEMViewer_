@@ -42,7 +42,7 @@ class GUI():
                     sp = [x.replace('}', "").strip() for x in l[-1].split('{')]
                     self.tree.insert("", index, text=l[0], values=(l[1], sp[0], sp[1]))
             except:
-                lines_ommitted.append(l)
+                lines_omitted.append(l)
             index += 1
             
         if len(lines_omitted) > 0:
