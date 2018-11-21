@@ -33,7 +33,7 @@ class GUI():
     def add_content(self):
         index = 0
         for s in self.content:
-            l = [x.strip() for x in s.split('-')]
+            l = [x.strip() for x in s.split(' - ')]
             if '{' not in l[-1]: # handle comments
                 self.tree.insert("", index, text=l[0], values=(l[1], l[2]))
             else:
