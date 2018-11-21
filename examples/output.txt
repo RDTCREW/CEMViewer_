@@ -1,0 +1,85 @@
+rumblefighter.exe+582A0 - 55                    - push ebp
+rumblefighter.exe+582A1 - 8B EC                 - mov ebp,esp
+rumblefighter.exe+582A3 - 81 EC 08020000        - sub esp,00000208 { 520 }
+rumblefighter.exe+582A9 - A1 C0CA7C00           - mov eax,[rumblefighter.exe+3CCAC0] { [DAC93814] }
+rumblefighter.exe+582AE - 33 C5                 - xor eax,ebp
+rumblefighter.exe+582B0 - 89 45 FC              - mov [ebp-04],eax
+rumblefighter.exe+582B3 - A1 683C7300           - mov eax,[rumblefighter.exe+333C68] { ["RumbleFighter"] }
+rumblefighter.exe+582B8 - 8B 0D 6C3C7300        - mov ecx,[rumblefighter.exe+333C6C] { ["leFighter"] }
+rumblefighter.exe+582BE - 8B 15 703C7300        - mov edx,[rumblefighter.exe+333C70] { ["ghter"] }
+rumblefighter.exe+582C4 - 56                    - push esi
+rumblefighter.exe+582C5 - 8B 75 0C              - mov esi,[ebp+0C]
+rumblefighter.exe+582C8 - 68 F1000000           - push 000000F1 { 241 }
+rumblefighter.exe+582CD - 89 8D 00FEFFFF        - mov [ebp-00000200],ecx
+rumblefighter.exe+582D3 - 89 85 FCFDFFFF        - mov [ebp-00000204],eax
+rumblefighter.exe+582D9 - 66 A1 743C7300        - mov ax,[rumblefighter.exe+333C74] { [00000072] }
+rumblefighter.exe+582DF - 8D 8D 0AFEFFFF        - lea ecx,[ebp-000001F6]
+rumblefighter.exe+582E5 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+582E7 - 51                    - push ecx
+rumblefighter.exe+582E8 - 89 95 04FEFFFF        - mov [ebp-000001FC],edx
+rumblefighter.exe+582EE - 66 89 85 08FEFFFF     - mov [ebp-000001F8],ax
+rumblefighter.exe+582F5 - E8 16A82800           - call rumblefighter.exe+2E2B10
+rumblefighter.exe+582FA - 68 FF000000           - push 000000FF { 255 }
+rumblefighter.exe+582FF - 8D 95 FDFEFFFF        - lea edx,[ebp-00000103]
+rumblefighter.exe+58305 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58307 - 52                    - push edx
+rumblefighter.exe+58308 - C6 85 FCFEFFFF 00     - mov byte ptr [ebp-00000104],00 { 0 }
+rumblefighter.exe+5830F - E8 FCA72800           - call rumblefighter.exe+2E2B10
+rumblefighter.exe+58314 - 8B 45 08              - mov eax,[ebp+08]
+rumblefighter.exe+58317 - 05 17FCFFFF           - add eax,FFFFFC17 { -1001 }
+rumblefighter.exe+5831C - 83 C4 18              - add esp,18 { 24 }
+rumblefighter.exe+5831F - 83 F8 12              - cmp eax,12 { 18 }
+rumblefighter.exe+58322 - 0F87 AE000000         - ja rumblefighter.exe+583D6
+rumblefighter.exe+58328 - 0FB6 80 0C844500      - movzx eax,byte ptr [eax+rumblefighter.exe+5840C]
+rumblefighter.exe+5832F - FF 24 85 EC834500     - jmp dword ptr [eax*4+rumblefighter.exe+583EC]
+rumblefighter.exe+58336 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58338 - E8 70B72800           - call rumblefighter.exe+2E3AAD
+rumblefighter.exe+5833D - 56                    - push esi
+rumblefighter.exe+5833E - 8D 8D FCFEFFFF        - lea ecx,[ebp-00000104]
+rumblefighter.exe+58344 - 68 5C607300           - push rumblefighter.exe+33605C { ["GameGuard initialization error : %lu"] }
+rumblefighter.exe+58349 - 51                    - push ecx
+rumblefighter.exe+5834A - E8 C6B72800           - call rumblefighter.exe+2E3B15
+rumblefighter.exe+5834F - 83 C4 0C              - add esp,0C { 12 }
+rumblefighter.exe+58352 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58354 - 8D 95 FCFDFFFF        - lea edx,[ebp-00000204]
+rumblefighter.exe+5835A - 52                    - push edx
+rumblefighter.exe+5835B - 8D 85 FCFEFFFF        - lea eax,[ebp-00000104]
+rumblefighter.exe+58361 - 50                    - push eax
+rumblefighter.exe+58362 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58364 - FF 15 08057300        - call dword ptr [rumblefighter.exe+330508] { ->037F0D2C }
+rumblefighter.exe+5836A - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+5836C - E8 3CB72800           - call rumblefighter.exe+2E3AAD
+rumblefighter.exe+58371 - 68 44607300           - push rumblefighter.exe+336044 { ["Speed hack detected."] }
+rumblefighter.exe+58376 - 8D 8D FCFEFFFF        - lea ecx,[ebp-00000104]
+rumblefighter.exe+5837C - 51                    - push ecx
+rumblefighter.exe+5837D - E8 93B72800           - call rumblefighter.exe+2E3B15
+rumblefighter.exe+58382 - 83 C4 08              - add esp,08 { 8 }
+rumblefighter.exe+58385 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58387 - 8D 95 FCFDFFFF        - lea edx,[ebp-00000204]
+rumblefighter.exe+5838D - 52                    - push edx
+rumblefighter.exe+5838E - 8D 85 FCFEFFFF        - lea eax,[ebp-00000104]
+rumblefighter.exe+58394 - 50                    - push eax
+rumblefighter.exe+58395 - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+58397 - FF 15 08057300        - call dword ptr [rumblefighter.exe+330508] { ->037F0D2C }
+rumblefighter.exe+5839D - 6A 00                 - push 00 { 0 }
+rumblefighter.exe+5839F - E8 09B72800           - call rumblefighter.exe+2E3AAD
+rumblefighter.exe+583A4 - 68 30607300           - push rumblefighter.exe+336030 { ["Gamehack detected."] }
+rumblefighter.exe+583A9 - EB CB                 - jmp rumblefighter.exe+58376
+rumblefighter.exe+583AB - 68 08607300           - push rumblefighter.exe+336008 { ["Game or GameGuard has been falsified"] }
+rumblefighter.exe+583B0 - EB C4                 - jmp rumblefighter.exe+58376
+rumblefighter.exe+583B2 - 8B 15 18F87C00        - mov edx,[rumblefighter.exe+3CF818] { [03B5D7C0] }
+rumblefighter.exe+583B8 - 8D 8D F8FDFFFF        - lea ecx,[ebp-00000208]
+rumblefighter.exe+583BE - 51                    - push ecx
+rumblefighter.exe+583BF - 8B 8A DC010000        - mov ecx,[edx+000001DC]
+rumblefighter.exe+583C5 - 81 C1 7C0C0000        - add ecx,00000C7C { 3196 }
+rumblefighter.exe+583CB - 89 B5 F8FDFFFF        - mov [ebp-00000208],esi
+rumblefighter.exe+583D1 - E8 2A280C00           - call rumblefighter.exe+11AC00
+rumblefighter.exe+583D6 - 8B 4D FC              - mov ecx,[ebp-04]
+rumblefighter.exe+583D9 - 33 CD                 - xor ecx,ebp
+rumblefighter.exe+583DB - B8 01000000           - mov eax,00000001 { 1 }
+rumblefighter.exe+583E0 - 5E                    - pop esi
+rumblefighter.exe+583E1 - E8 1BA72800           - call rumblefighter.exe+2E2B01
+rumblefighter.exe+583E6 - 8B E5                 - mov esp,ebp
+rumblefighter.exe+583E8 - 5D                    - pop ebp
+rumblefighter.exe+583E9 - C2 0800               - ret 0008 { 8 }
+rumblefighter.exe+583EC - 36 83 45 00 71        - add ss:[ebp+00],71 { 113 }
