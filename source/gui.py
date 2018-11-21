@@ -32,15 +32,19 @@ class GUI():
 
     def add_content(self):
         index = 0
+        lines_omitted = []
         for s in self.content:
             l = [x.strip() for x in s.split(' - ')]
-            if '{' not in l[-1]: # handle comments
-                self.tree.insert("", index, text=l[0], values=(l[1], l[2]))
-            else:
-                sp = [x.replace('}', "").strip() for x in l[-1].split('{')]
-                self.tree.insert("", index, text=l[0], values=(l[1], sp[0], sp[1]))
-                
+            try:
+                if '{' not in l[-1]: # handle comments
+                    self.tree.insert("", index, text=l[0], values=(l[1], l[2]))
+                else:
+                    sp = [x.replace('}', "").strip() for x in l[-1].split('{')]
+                    self.tree.insert("", index, text=l[0], values=(l[1], sp[0], sp[1]))
+            except:
+                lines_ommitted.append(l)
             index += 1
+        print('Lines omitted:', lines_omitted')
 
 if __name__ == '__main__':
     filename = input('File name: ')
