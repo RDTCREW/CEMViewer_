@@ -44,7 +44,7 @@ class GUI():
             except:
                 lines_ommitted.append(l)
             index += 1
-        print('Lines omitted:', lines_omitted')
+        print('Lines omitted:', lines_omitted)
 
 if __name__ == '__main__':
     filename = input('File name: ')
